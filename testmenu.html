@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Bob CSS Drop Down Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="./css/bobstyle.css" />
+
+<script type="text/javascript" src="./script/bob_menu.js" />
+<script language="javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+</script>
+
+</head>
+
+<body onload="MM_preloadImages('./images/navigation/home.png','./images/navigation/home_o.png','./images/navigation/morning.png','./images/navigation/morning_o.png','./images/navigation/contact.png','./images/navigation/contact_o.png','./images/navigation/stuff.png','./images/navigation/stuff_o.png','./images/navigation/music.png','./images/navigation/music_o.png','./images/navigation/concerts.png','./images/navigation/concerts_o.png','./images/navigation/about.png','./images/navigation/about_o.png','./images/navigation/town.png','./images/navigation/town_o.png','./images/navigation/calendar.png','./images/navigation/calendar_o.png')">
+
+
+
+<div class="bobstyle" id="bob_menu">
+<ul>
+<li><a href="./index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('home','','images/navigation/home_o.png',1)"><img src="./images/navigation/home.png" id="home" width="42" height="25" border="0" /></a></li><li><a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('about','','images/navigation/about_o.png',1)"><img src="./images/navigation/about.png" id="about" width="76" height="25" border="0" /></a></li><li><a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('morning','','images/navigation/morning_o.png',1)"><img src="./images/navigation/morning.png" id="morning" width="85" height="25" border="0" /></a></li><li><a href="#" rel="music_menu" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('music','','images/navigation/music_o.png',1)"><img src="./images/navigation/music.png" id="music" width="46" height="25" border="0" /></a></li><li><a href="#" rel="bobstuff_menu" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('stuff','','images/navigation/stuff_o.png',1)"><img src="./images/navigation/stuff.png" id="stuff" width="101" height="25" border="0" /></a></li><li><a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('concerts','','images/navigation/concerts_o.png',1)"><img src="./images/navigation/concerts.png" id="concerts" width="68" height="25" border="0" /></a></li><li><a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contact','','images/navigation/contact_o.png',1)"><img src="./images/navigation/contact.png" id="contact" width="91" height="25" border="0" /></a></li><li><a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('town','','images/navigation/town_o.png',1)"><img src="./images/navigation/town.png" id="town" width="95" height="25" border="0" /></a></li><li><a href="#" rel="cal_menu" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('calendar','','images/navigation/calendar_o.png',1)"><img src="./images/navigation/calendar.png" id="calendar" width="80" height="25" border="0" /></a></li>
+</ul>
+</div>
+
+<!--Music Menu -->                                                   
+<div id="music_menu" class="dropmenudiv">
+<a href="javascript:;">We Play Anything</a>
+<a href="javascript:;">9 @ 9</a>
+<a href="javascript:;">Artist Links</a>
+</div>
+
+
+<!--bobstuff menu -->                                                
+<div id="bobstuff_menu" class="dropmenudiv" style="width: 150px;">
+<a href="javascript:;">Win Bob's Stuff</a>
+<a href="javascript:;">The Bob Squad</a>
+<a href="javascript:;">Join the Bob Squad!</a>
+</div>
+
+<!-- Cal Menu -->                                                   
+<div id="cal_menu" class="dropmenudiv" style="width: 150px;">
+<a href="javascript:;">Community Calendar</a>
+<a href="javascript:;">Register an Event</a>
+</div>
+
+
+<script type="text/javascript">
+
+cssdropdown.startMenu("bob_menu")
+
+</script>
+
+<p><b>Note:</b> To see how the menu looks with an alternate theme, just change the code:</p>
+<pre>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;chrometheme/chromestyle.css&quot; /&gt;</pre>
+
+<p>inside the HEAD section above to reference one of the three alternate CSS files instead: "chromestyle2.css", "chromestyle3.css", or "chromestyle4.css"</p>
+
+<p align="center">Copyright 2006 <a href="http://www.dynamicdrive.com/notice.htm">Dynamic Drive</a></p>
+
+
+
+</body>
+
+</html>

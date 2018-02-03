@@ -1,0 +1,74 @@
+.bobstyle{
+	font-weight: bold;
+	line-height: 0px;
+	height: 25px;
+}
+
+/* .bobstyle:after{ /*Add margin between menu and rest of content in Firefox*/
+/* content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+} */
+
+.bobstyle ul{
+border: 1px solid color: #ff0000
+	height: 25px;
+}
+
+.bobstyle ul li{
+display:inline;
+border: none;
+margin: 0px 0px 0px 0px;
+background-color: #000000;
+line-height:inherit;
+padding: 0px 0px 0px 0px;
+}
+
+.bobstyle ul li a{
+color: #fef400;
+padding: 0px 0px 0px 0px;
+text-decoration: none;
+border: none;
+}
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv{
+position:absolute;
+top: 0;
+border: 1px solid ##fef400; /*THEME CHANGE HERE*/
+border-bottom-width: 0;
+font:11px Verdana, Arial, Helvetica, sans-serif; 
+line-height:14px;
+z-index:100;
+background-color: #000000;
+width: 150px;
+visibility: hidden;
+filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4); /*Add Shadow in IE. Remove if desired*/
+}
+
+
+.dropmenudiv a{
+width: auto;
+display:block;
+text-indent: 3px;
+border: 1px solid #000000; /*THEME CHANGE HERE*/
+padding: 0px;
+text-decoration:none;
+color: #000000;
+background-color: #fef400;
+}
+
+* html .dropmenudiv a{ /*IE only hack*/
+width: 100%;
+}
+
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/
+/* color: #FF6600; */
+font-weight:bold;
+font-style:italic;
+letter-spacing: 0.05em;
+background-color: #fef400;
+}

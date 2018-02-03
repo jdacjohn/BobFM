@@ -1,0 +1,17 @@
+# Do not track the following files
+
+# All log files
+*.log
+
+# All readme Files
+readme.*
+
+#  Backup files
+*.SAVE
+*.BAK
+
+# Docroot Misc Files 
+/.htaccess
+/license.txt
+/sitemap.xml
+/sitemap.xml.gz
